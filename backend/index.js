@@ -18,7 +18,7 @@ const {authenticateToken} = require("./utilities");
 
 app.use(express.json());
 app.use(cors({
-    origin: "https://web-notes-frontend.onrender.com/",
+    origin: "*",
 }))
 
 app.get("/", (req, res)=>{
